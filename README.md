@@ -1,6 +1,6 @@
-# ✈️ Firstflight Travels
+# ✈️ VistaNest Travels
 
-> A travel website project created using **HTML, CSS and JavaScript**.
+> A travel website project created using **HTML, CSS and JavaScript, Python**.
 
 🌐 **➡️ [Live Demo](https://nguyenthonhan.github.io/Service_Travel/client)
 
@@ -63,3 +63,12 @@ Hệ thống gồm hai tác nhân chính: **User** và **Admin**.
 ### b. 🔁 Flow (Activity Flow)
 
 Sử dụng **Activity Diagram** để mô tả luồng xử lý đặt tour:
+
+## 🚀 Hướng Dẫn Chạy Chương Trình
+
+# Chạy phần server Node.js
+cd server
+node index.js
+# Chạy phần chatbot Python
+cd chat
+python chat.py

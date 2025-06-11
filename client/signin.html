@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Document Management</title>
+    <link rel="stylesheet" href="css/sign.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api@1.7.13/dist/face-api.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/faceRecognition.js"></script>
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="form-container">
+        <div class="auth-form">
+            <h2>Sign In</h2>
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button class="submit-btn" onclick="handleSignin()">Sign In</button>
+            <button class="face-recognition-btn" onclick="handleFaceSignin()">Sign In with Face Recognition</button>
+            <div id="face-recognition-section" style="display: none; margin-top: 20px;">
+                <video id="video" width="300" height="225" autoplay muted></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <div class="loading" id="loading">Processing face recognition...</div>
+                <button class="close-webcam-btn" onclick="stopWebcam()">Close Webcam</button>
+            </div>
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9374844efbc11389',t:'MTc0NTgyMTg4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <!-- [Mới] Thêm thư viện Font Awesome để dùng icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div id="chatbot-icon" class="chatbot-icon">
+    <!-- [Mới] Thay đổi icon chatbot -->
+    <i class="fas fa-robot"></i>
+  </div>
+  
+  <div id="chat-container" class="chat-container hidden">
+    <div class="chat-header">
+      <!-- [Mới] Thêm icon và khu vực icon trang trí -->
+      <div class="header-title">
+        <i class="fas fa-robot"></i>
+        <span>Chatbot</span>
+      </div>
+      <div class="header-icons">
+        <i class="fas fa-link"></i> <!-- Icon trang trí -->
+        <button id="close-chat" class="close-btn">×</button>
+      </div>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <!-- [Mới] Cập nhật lại tin nhắn chào mừng -->
+      <div class="message bot">Chào Bạn! 😊 Tôi Có Thể Giúp Gì Cho Bạn Hôm Nay?</div>
+      
+      <!-- [Mới] Thêm cấu trúc cho hiệu ứng đang chờ, mặc định sẽ ẩn -->
+      <div id="typing-indicator" class="message bot hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="chat-input">
+      <!-- [Mới] Cập nhật placeholder -->
+      <input type="text" id="message-input" placeholder="Nhập Tin Nhắn...">
+      <button id="send-btn">
+        <!-- [Mới] Thay chữ "Send" bằng icon -->
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+  
+  <script src="chat.js"></script>
+</body>
+</html>

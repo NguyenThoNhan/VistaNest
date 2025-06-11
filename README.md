@@ -2,7 +2,7 @@
 
 > A travel website project created using **HTML, CSS and JavaScript**.
 
-🌐 **➡️ Live Demo**: *[Link to your deployed project]*
+🌐 **➡️ Live Demo**: *[https://nguyenthonhan.github.io/Service_Travel/]*
 
 ---
 
@@ -56,7 +56,7 @@ Hệ thống gồm hai tác nhân chính: **User** và **Admin**.
 
 #### 🧩 Use Case Diagram
 
-![Use Case Diagram](assets/usecase-diagram.png.png)
+![Use Case Diagram](images/usecase-diagram.png.png)
 
 ---
 
